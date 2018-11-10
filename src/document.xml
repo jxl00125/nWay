@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documents>
+	<!-- token是分词标识，0表示不分词，1表示分词 -->
+	<!-- name：视图名称；path：索引库路径 ;keyindex：主键（维护索引域）-->
+    <document name="v_docudoment"  path="D://trsserver//bxkcdata//v_document"  keyindex="docid"  dbname="ccbsit" >
+    	<!-- name：索引域名称；  Store是否存储：YES，NO； 
+    	index是否索引：ANALYZED代表索引并分词，ANALYZED_NO_NORMS代表索引分词但不使用，NO代表不索引不分词，NOT_ANALYZED不分词但索引,NOT_ANALYZED_NO_NORMS不分词索引但不使用
+    	core:检索核心字段
+    	-->
+        <!-- docid,doctitle,docchannel,doccontent -->
+        <field name="docid" store="YES" index="NOT_ANALYZED"  datatype="12" /><!-- 文档key（docid） -->
+        <field name="dockeywords" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 关键字 -->
+   		<field name="doctitle" store="YES" index="ANALYZED" core="true" datatype="12"/><!-- 标题 -->
+   		<field name="appendixcontent" store="YES" index="ANALYZED"  core="true"  datatype="2005" /><!-- 内容 -->
+   		<field name="doccontent" store="YES" index="ANALYZED" core="true" datatype="2005" /><!-- 摘要 -->
+   		<field name="docchannel" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 文档目录 -->
+		<field name="crusername" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 上传员工 -->
+		<field name="department" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 所属部门 -->
+		<field name="downscount" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 下载数 -->
+		<field name="hitscount" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 浏览次数 -->
+		<field name="opertime" store="YES" index="NOT_ANALYZED" datatype="93"/><!-- 最后更新 -->
+		<field name="crtime" store="YES" index="NOT_ANALYZED" datatype="93"/><!--上传时间 -->
+		<field name="doctype" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 文档类型 -->
+		<field name="userid" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 用户id -->
+		<field name="departmentid" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 部门id -->
+		<field name="docchannelid" store="YES" index="NOT_ANALYZED" datatype="12"/><!-- 文档目录id -->
+    	<field name="docsecurity" store="YES" index="NOT_ANALYZED"  datatype="12" /><!-- 文档权限 -->
+    </document>
+   
+</documents>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<!-- 基本检索 -->
+    <parameter name="SearchWord"  desc="检索词"   type="1"  value="通知" />
+    <parameter name="SearchType"  desc="检索类型"  type="1"   value="doctitle" />
+    <parameter name="IsFenciSearch"  desc="是否分词检索" type="1"   value="1" />
+    <parameter name="LastSearch"  desc="二次检索"  type="1"  value="1" />
+    <parameter name="CurrSearch"  desc="二次检索条件"  type="1"  value="doctitle+=南方电网技术论坛" />
+    <parameter name="OrderBySelf"  desc="自定义排序"  type="1"   value="" />
+    <parameter name="OrderBy"  desc="排序字段 "  type="1"  value="" />
+    <parameter name="PageSize"  desc="页面记录数 " type="1"   value="10" />
+    <parameter name="PageIndex"  desc="当前页码 " type="1"  value="1" />
+    <!-- 高级检索 -->
+    <parameter name="IsAdvSearch"  desc="是否是高级检索 "  type="1"  value="0" />
+    <parameter name="Allwords"  desc="包含所有的词 "  type="1"  value="" />
+    <parameter name="OnlyOneWords"  desc="包含任意的词 "  type="1"  value="" />
+    <!-- 用户子定义 name 需和索引域结构保持一致 -->
+    <parameter name="ChannelId"  desc="指定分类 "  type="0"  value="" />
+    
+</search>

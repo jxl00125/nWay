@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageBean pagesize="" currentpage="" totalrecord="" processwhere="">
+	<results>
+    	<document>
+	        <field name="docid" value=""/>
+	        <field name="doctitle" value="" />
+	        <field name="doccontent" value=""/>
+	        <field name="docchannel" value=""/>
+    	</document>
+    </results>
+</pageBean>
